@@ -9,7 +9,7 @@ Created on Fri Nov 18 11:47:16 2022
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.express as px
+import plotly as px
 from  PIL import Image
 import io 
 from st_aggrid import AgGrid
@@ -41,7 +41,7 @@ if uploaded_file is not None:
     This is a GANTT chart informing about periods of *automatic/manual* operations''')
     
     if st.button('Generate Gantt Chart'): 
-        fig = px.timeline(
+        fig = px.express.timeline(
                         df, 
                         x_start="Start", 
                         x_end="End", 
