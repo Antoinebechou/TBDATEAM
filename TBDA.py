@@ -43,7 +43,7 @@ for index, row in rows.iterrows():
 
 # Create the Gantt chart using the data
 fig = px.timeline(data, x_start="start", x_end="finish", y="status")
-fig.update_layout(title="Operational status (On/off)")
+fig.update_layout(title="Operational status (On/off)  during chosen timeframe Jan 31 2022 00:00 - Feb 1 2022 12:00")
 
 #Show the Gantt chart
 
