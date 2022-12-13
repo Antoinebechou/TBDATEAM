@@ -131,11 +131,11 @@ for i in range(len(temp_xyz)):
 #We did reduced the number of value. Now we can plot if we want
 
 st.text("Evolution of the temperature of the X axis motor during the time")
-st.line_chart(temp_xyz[0])
+st.line_chart(temp_xyz[0],x='dateh',y='value')
 st.text("Evolution of the temperature of the Y axis motor during the time")
-st.line_chart(temp_xyz[1])
+st.line_chart(temp_xyz[1],x='dateh',y='value')
 st.text("Evolution of the temperature of the Z axis motor during the time")
-st.line_chart(temp_xyz[2])
+st.line_chart(temp_xyz[2],x='dateh',y='value')
 
 
 ######## - FEATURE 4 - ########
